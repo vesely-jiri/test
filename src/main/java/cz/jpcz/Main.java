@@ -28,19 +28,15 @@ public class Main {
         )) {
 
             List<String> values = reader.lines().toList();
-
             filter = new DataFilter<>(values);
-
-            System.out.println("Filtered data: ");
-            for (String s : filter.getFiltered(conditions)) {
-
-                System.out.println(s);
-
-            }
 
         } catch (IOException ioe) {
             throw new InputDataException("Error while trying to access data", ioe.getCause());
         }
 
+        System.out.println("Filtered data: ");
+        for (String s : filter.getFiltered(conditions)) {
+            System.out.println(s);
+        }
     }
 }
