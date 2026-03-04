@@ -46,3 +46,7 @@ With condition `t -> Integer.parseInt(t) == 1000`, output:
 Filtered data:
 1000
 ```
+
+## TODO
+
+- Allow user to choose logic operators for filtering. (AND -> AND/OR)
